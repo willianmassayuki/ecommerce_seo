@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadeiras de Escritório Ergonômicas | NomeLoja</title>
+    <meta name="description" content="Confira nossa linha completa de cadeiras de escritório. Ajuste lombar, braços reguláveis e conforto garantido para o seu dia a dia.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/categoria.js" defer></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="NomeLoja Home">
+                <img src="https://placehold.co/150x40/0056b3/ffffff?text=NomeLoja" alt="Logo NomeLoja" width="150" height="40">
+            </a>
+            <nav class="main-nav" aria-label="Navegação Principal">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categoria.html?cat=escritorio">Escritório</a></li>
+                    <li><a href="categoria.html?cat=gamer">Gamer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" class="container page-categoria">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="index.html"><span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="categoria.html"><span itemprop="name">Cadeiras</span></a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name" id="breadcrumb-atual">Escritório</span>
+                    <meta itemprop="position" content="3" />
+                </li>
+            </ol>
+        </nav>
+
+        <header class="category-title-section">
+            <h1 id="titulo-categoria">Cadeiras de Escritório</h1>
+        </header>
+
+        <div class="layout-categoria">
+            <aside class="filters-sidebar">
+                <h2>Filtrar Por</h2>
+                <form id="form-filtros">
+                    <div class="filter-group">
+                        <label for="filtro-preco">Preço Máximo:</label>
+                        <input type="range" id="filtro-preco" name="preco" min="500" max="2000" step="100" value="2000">
+                        <span id="valor-preco">R$ 2000</span>
+                    </div>
+                </form>
+            </aside>
+
+            <section class="products-list-section" aria-label="Lista de Produtos">
+                <div id="lista-produtos" class="products-grid">
+                    <!-- Injeção via JS -->
+                </div>
+
+                <nav class="pagination" aria-label="Navegação de páginas">
+                    <a href="#" class="page-link" aria-label="Página anterior">&laquo; Anterior</a>
+                    <a href="#" class="page-link active" aria-current="page">1</a>
+                    <a href="#" class="page-link">2</a>
+                    <a href="#" class="page-link" aria-label="Próxima página">Próxima &raquo;</a>
+                </nav>
+            </section>
+        </div>
+
+        <section class="seo-footer-text">
+            <h2>Como escolher a melhor cadeira para sua rotina?</h2>
+            <p>Ao buscar uma cadeira, considere o tempo que passará nela. Modelos com mecanismo de inclinação sincronizada, braços 3D e encosto em tela Mesh (que permite a troca térmica) são ideais para climas quentes e longas horas de uso diário. Invista na sua saúde e evite lesões por esforço repetitivo (LER).</p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 NomeLoja Cadeiras. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+        </div>
+    </footer>
+
+</body>
+</html>

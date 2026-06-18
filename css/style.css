@@ -1,0 +1,97 @@
+/* RESET & VARIAVÉIS */
+:root {
+    --primary-color: #0056b3;
+    --text-color: #333;
+    --bg-light: #f8f9fa;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; color: var(--text-color); line-height: 1.6; background-color: #fff; }
+.container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 20px 0; }
+
+/* ACESSIBILIDADE */
+.skip-link {
+    position: absolute; top: -40px; left: 0; background: var(--primary-color); color: white;
+    padding: 8px; z-index: 100; transition: top 0.2s;
+}
+.skip-link:focus { top: 0; }
+
+/* HEADER */
+.main-header { background: #fff; border-bottom: 1px solid #ddd; }
+.header-container { display: flex; justify-content: space-between; align-items: center; }
+.main-nav ul { display: flex; list-style: none; gap: 20px; }
+.main-nav a { text-decoration: none; color: #555; font-weight: 600; }
+.main-nav a[aria-current="page"] { color: var(--primary-color); border-bottom: 2px solid; }
+
+/* HERO BANNER */
+.hero-banner { position: relative; background: #1e293b; color: #fff; height: 350px; display: flex; align-items: center; overflow: hidden;}
+.banner-content { position: relative; z-index: 2; max-width: 600px; padding: 0 5%; }
+.banner-content h1 { font-size: 2.2rem; margin-bottom: 15px; line-height: 1.2; }
+.hero-img { position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0.4; top:0; left:0; z-index:1; }
+.btn-primary { display: inline-block; background: var(--primary-color); color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; margin-top: 10px; font-weight: 600; border: none; }
+
+/* SEÇÕES INTRO */
+.seo-intro h2, .vitrine-section h2 { font-size: 1.8rem; color: #0f172a; margin-bottom: 15px; }
+
+/* CTA BANNER */
+.cta-banner { display: flex; gap: 40px; align-items: center; margin-top: 40px; background: #f1f5f9; padding: 40px; border-radius: 8px; }
+.cta-text { flex: 1; }
+.cta-image { flex: 1; display: flex; }
+.cta-image img { width: 100%; height: auto; border-radius: 6px; }
+
+/* VITRINE / GRID */
+.products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin-top: 20px; }
+.product-card { border: 1px solid #eee; border-radius: 8px; padding: 15px; text-align: center; background: #fff; transition: transform 0.2s; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.product-card a { text-decoration: none; color: inherit; display: block; }
+.product-card img { max-width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px; }
+.product-card h3 { font-size: 1.1rem; margin: 15px 0 10px; color: #1e293b; }
+.product-card .price { color: var(--primary-color); font-weight: bold; font-size: 1.2rem; }
+
+/* LAYOUT CATEGORIA */
+.layout-categoria { display: flex; gap: 40px; margin-top: 20px; }
+.filters-sidebar { width: 220px; flex-shrink: 0; background: #f8f9fa; padding: 20px; border-radius: 6px; height: fit-content; }
+.filters-sidebar h2 { font-size: 1.2rem; margin-bottom: 15px; }
+.filter-group label { display: block; margin-bottom: 5px; font-weight: 600; }
+.filter-group input { width: 100%; }
+.products-list-section { flex-grow: 1; }
+.seo-footer-text { margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px; }
+
+/* BREADCRUMB */
+.breadcrumb ol { display: flex; list-style: none; gap: 10px; font-size: 0.9rem; color: #666; padding-bottom: 15px; }
+.breadcrumb li::after { content: "/"; margin-left: 10px; color: #cbd5e1; }
+.breadcrumb li:last-child::after { content: ""; }
+.breadcrumb a { color: var(--primary-color); text-decoration: none; }
+
+/* PAGINAÇÃO */
+.pagination { display: flex; justify-content: center; gap: 10px; margin-top: 40px; }
+.pagination a { padding: 10px 15px; border: 1px solid #ddd; text-decoration: none; color: #333; border-radius: 4px; }
+.pagination a.active { background: var(--primary-color); color: #fff; border-color: var(--primary-color); }
+
+/* LAYOUT DA PÁGINA DE PRODUTO */
+.layout-produto { display: flex; gap: 50px; margin-top: 30px; align-items: flex-start; }
+.produto-galeria { width: 50%; display: flex; flex-direction: column; gap: 15px; }
+.imagem-principal-container { width: 100%; background: #f8f9fa; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; display: flex; }
+.imagem-principal-container img { width: 100%; height: auto; object-fit: contain; }
+.imagens-miniaturas { display: flex; gap: 10px; }
+.imagens-miniaturas button { border: 2px solid #e2e8f0; border-radius: 4px; background: none; cursor: pointer; padding: 0; width: 80px; height: 80px; overflow: hidden; }
+.imagens-miniaturas button.active, .imagens-miniaturas button:hover { border-color: var(--primary-color); }
+.imagens-miniaturas img { width: 100%; height: 100%; object-fit: cover; }
+
+.produto-info { width: 50%; }
+.produto-info h1 { font-size: 2rem; margin-bottom: 10px; color: #0f172a; line-height: 1.2; }
+.marca-sku { display: flex; gap: 20px; font-size: 0.85rem; color: #64748b; margin-bottom: 20px; }
+.preco-box { background: #f8f9fa; padding: 20px; border-radius: 6px; margin-bottom: 25px; border-left: 4px solid var(--primary-color); }
+.preco-principal { font-size: 2.2rem; font-weight: 700; color: #0f172a; }
+.parcelamento { font-size: 1rem; color: #475569; }
+.disponibilidade { font-size: 0.9rem; color: #16a34a; font-weight: 600; margin-top: 10px; }
+.descricao-curta h2 { font-size: 1.2rem; margin-bottom: 8px; color: #334155; }
+.btn-comprar { display: block; width: 100%; max-width: 350px; background: #16a34a; color: #fff; border: none; padding: 15px; font-size: 1.1rem; font-weight: bold; border-radius: 6px; cursor: pointer; margin-top: 25px; text-transform: uppercase; transition: background 0.2s; }
+.btn-comprar:hover { background: #15803d; }
+
+/* FOOTER GLOBAL */
+.main-footer { background: #1e293b; color: #fff; text-align: center; padding: 30px 0; margin-top: 60px; font-size: 0.9rem; }
+
+@media (max-width: 768px) {
+    .layout-produto, .cta-banner, .layout-categoria { flex-direction: column; gap: 30px; }
+    .produto-galeria, .produto-info, .filters-sidebar, .products-list-section { width: 100%; }
+}

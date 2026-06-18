@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nome": "Cadeira Ergonômica Office Premium",
+    "slug": "cadeira-ergonomica-office-premium",
+    "preco": 1299.0,
+    "imagem": "https://placehold.co/300x300/e2e8f0/475569?text=Cadeira+Office+Premium",
+    "categoria": "escritorio",
+    "descricao": "Cadeira ergonômica certificada pela NR-17. Possui braços com regulagem tridimensional (3D), encosto reclinável em tela mesh respirável e suporte lombar adaptativo para garantir o máximo de conforto durante o expediente."
+  },
+  {
+    "id": 2,
+    "nome": "Cadeira Gamer Pro Raven",
+    "slug": "cadeira-gamer-pro-raven",
+    "preco": 1599.0,
+    "imagem": "https://placehold.co/300x300/cbd5e1/475569?text=Cadeira+Gamer+Pro",
+    "categoria": "gamer",
+    "descricao": "Conforto extremo para longas sessões de jogos com espuma de alta densidade, ajuste 4D nos braços e inclinação de até 180 graus."
+  }
+]

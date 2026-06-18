@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadeira Ergonômica Office Premium | NomeLoja</title>
+    <meta name="description" content="Compre a Cadeira Ergonômica Office Premium com suporte lombar regulável. Parcele em até 10x sem juros e garanta frete grátis!">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/produto.js" defer></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="NomeLoja Home">
+                <img src="https://placehold.co/150x40/0056b3/ffffff?text=NomeLoja" alt="Logo NomeLoja" width="150" height="40">
+            </a>
+            <nav class="main-nav" aria-label="Navegação Principal">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categoria.html?cat=escritorio">Escritório</a></li>
+                    <li><a href="categoria.html?cat=gamer">Gamer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal" class="container" itemscope itemtype="https://schema.org/Product">
+        
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categoria.html" id="breadcrumb-cat-link">Cadeiras</a></li>
+                <li><span id="breadcrumb-produto-atual" itemprop="name">Cadeira Ergonômica Office Premium</span></li>
+            </ol>
+        </nav>
+
+        <div class="layout-produto">
+            <!-- Galeria à Esquerda -->
+            <section class="produto-galeria" aria-label="Galeria de Imagens do Produto">
+                <div class="imagem-principal-container">
+                    <img id="produto-imagem-principal" src="https://placehold.co/600x600/e2e8f0/475569?text=Cadeira+Office+Premium" alt="Cadeira Ergonômica Office Premium vista de frente" fetchpriority="high" width="600" height="600" itemprop="image">
+                </div>
+                <div class="imagens-miniaturas" id="produto-miniaturas">
+                    <button aria-label="Visualizar ângulo frontal" class="active"><img src="https://placehold.co/100x100/e2e8f0/475569?text=Frente" alt="Miniatura frontal" width="100" height="100"></button>
+                    <button aria-label="Visualizar ângulo lateral"><img src="https://placehold.co/100x100/cbd5e1/475569?text=Lateral" alt="Miniatura lateral" width="100" height="100"></button>
+                    <button aria-label="Visualizar detalhes do encosto"><img src="https://placehold.co/100x100/94a3b8/475569?text=Detalhe" alt="Miniatura detalhe" width="100" height="100"></button>
+                </div>
+            </section>
+
+            <!-- Informações Básicas à Direita -->
+            <section class="produto-info" aria-label="Informações Comerciais">
+                <h1 id="produto-nome" itemprop="name">Cadeira Ergonômica Office Premium</h1>
+                
+                <div class="marca-sku">
+                    <p>Marca: <span itemprop="brand">PremiumChairs</span></p>
+                    <p>SKU: <span id="produto-sku" itemprop="sku">CAD-OFF-01</span></p>
+                </div>
+
+                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="preco-box">
+                    <meta itemprop="priceCurrency" content="BRL">
+                    <span class="preco-principal">R$ <span id="produto-preco" itemprop="price" content="1299.00">1.299,00</span></span>
+                    <p class="parcelamento">ou 10x de R$ 129,90 sem juros</p>
+                    <link itemprop="availability" href="https://schema.org/InStock">
+                    <p class="disponibilidade">✓ Em estoque — Envio imediato</p>
+                </div>
+
+                <div class="descricao-curta">
+                    <h2>Destaques do Produto</h2>
+                    <p id="produto-descricao" itemprop="description">Cadeira ergonômica certificada pela NR-17. Possui braços com regulagem tridimensional (3D), encosto reclinável em tela mesh respirável e suporte lombar adaptativo para garantir o máximo de conforto durante o expediente.</p>
+                </div>
+
+                <button class="btn-comprar" aria-label="Adicionar ao carrinho">Adicionar ao Carrinho</button>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 NomeLoja Cadeiras. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+        </div>
+    </footer>
+
+</body>
+</html>

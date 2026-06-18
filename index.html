@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Meta Tags de SEO Básicas -->
     <title>Cadeiras de Alta Qualidade para Escritório e Gamer | NomeLoja</title>
     <meta name="description" content="Encontre a cadeira ideal para seu conforto. Modelos ergonômicos, gamers e para escritório com os melhores preços e entrega rápida. Confira!">
     <link rel="canonical" href="https://www.nomeloja.com.br/">
 
+    <!-- Open Graph / Facebook (Compartilhamento) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.nomeloja.com.br/">
     <meta property="og:title" content="Cadeiras de Alta Qualidade para Escritório e Gamer | NomeLoja">
     <meta property="og:description" content="Encontre a cadeira ideal para seu conforto. Modelos ergonômicos, gamers e para escritório.">
     <meta property="og:image" content="https://placehold.co/1200x630/0056b3/ffffff?text=NomeLoja+Cadeiras">
 
+    <!-- Preconexão para otimizar carregamento de fontes/APIs externas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <!-- CSS unificado e minificado (em produção) -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Scripts com DEFER: Não bloqueiam a renderização do HTML (Melhora o LCP/FCP) -->
     <script src="js/main.js" defer></script>
     
+    <!-- Dados Estruturados (Schema.org) - Essencial para Rich Snippets no Google -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -34,6 +41,7 @@
 </head>
 <body>
 
+    <!-- Acessibilidade: Link para pular direto para o conteúdo -->
     <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
 
     <header class="main-header">
@@ -52,31 +60,39 @@
     </header>
 
     <main id="conteudo-principal">
+        <!-- SEÇÃO 1: Banner Full (LCP - Maior elemento pintado na tela) -->
         <section class="hero-banner" aria-label="Destaque Principal">
             <div class="banner-content">
+                <!-- h1 contendo a palavra-chave principal do negócio -->
                 <h1>Cadeiras Ergonômicas que Transformam sua Produtividade</h1>
                 <p>Sua postura agradece. Conheça a linha premium com até 10 anos de garantia.</p>
                 <a href="categoria.html" class="btn btn-primary">Ver Modelos Office</a>
             </div>
+            <!-- Imagem LCP: SEM loading="lazy" e com fetchpriority="high" para carregar o mais rápido possível -->
             <img src="https://placehold.co/1920x600/1e293b/ffffff?text=Banner+Principal+Cadeiras" alt="Pessoa sentada confortavelmente em uma cadeira de escritório premium" fetchpriority="high" width="1920" height="600" class="hero-img">
         </section>
 
+        <!-- SEÇÃO 2: Título e Texto (Contextualização para o Google Bot) -->
         <section class="seo-intro container">
             <h2>Por que escolher as Cadeiras da NomeLoja?</h2>
             <p>Nosso catálogo é rigorosamente selecionado seguindo as normas da NR-17 de ergonomia. Seja para o home office ou para longas jornadas de jogos, nossas cadeiras oferecem o suporte necessário para evitar dores nas costas e melhorar sua performance diária.</p>
         </section>
 
+        <!-- SEÇÃO 3: Título e Vitrine (Dinâmica) -->
         <section class="vitrine-section container">
             <h2>Cadeiras em Destaque</h2>
+            <!-- Container onde o JavaScript vai injetar os produtos -->
             <div id="vitrine-home" class="products-grid"></div>
         </section>
 
+        <!-- SEÇÃO 4: Texto e CTA com Banner -->
         <section class="cta-banner container">
             <div class="cta-text">
                 <h2>Procurando Alto Desempenho nos Games?</h2>
                 <p>A linha Gamer Pro possui ajuste 4D nos braços e inclinação de até 180°.</p>
                 <a href="categoria.html?cat=gamer" class="btn btn-primary" style="background:#334155;">Explorar Linha Gamer</a>
             </div>
+            <!-- Imagem Secundária: COM loading="lazy" para não roubar banda do topo da página -->
             <div class="cta-image">
                 <img src="https://placehold.co/600x400/cbd5e1/334155?text=Cadeira+Gamer+Destaque" alt="Cadeira gamer preta e vermelha em ambiente iluminado com led" loading="lazy" width="600" height="400">
             </div>

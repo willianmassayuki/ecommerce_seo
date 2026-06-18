@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', async () => {
+    // Pega parâmetros da URL (Ex: ?cat=gamer)
     const params = new URLSearchParams(window.location.search);
     const catFiltrada = params.get('cat');
 
     const produtos = await carregarProdutos();
     let produtosFiltrados = [...produtos];
 
+    // Atualiza dinamicamente elementos de SEO na página baseado na categoria passada por parâmetro
     if (catFiltrada) {
         produtosFiltrados = produtos.filter(p => p.categoria === catFiltrada);
         const nomeFormatado = catFiltrada.charAt(0).toUpperCase() + catFiltrada.slice(1);
@@ -20,6 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     renderizarProdutos(produtosFiltrados, 'lista-produtos');
 
+    // Listener do filtro de preço interativo
     const filtroPreco = document.getElementById('filtro-preco');
     if(filtroPreco) {
         filtroPreco.addEventListener('input', (e) => {

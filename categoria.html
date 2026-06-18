@@ -28,6 +28,7 @@
 
     <main id="conteudo-principal" class="container page-categoria">
         
+        <!-- Breadcrumb: Essencial para navegação estrutural e SEO (Rich Snippets) -->
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <ol itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -45,11 +46,13 @@
             </ol>
         </nav>
 
+        <!-- Termo de Busca / Título da Categoria -->
         <header class="category-title-section">
             <h1 id="titulo-categoria">Cadeiras de Escritório</h1>
         </header>
 
         <div class="layout-categoria">
+            <!-- Filtros Básicos (Sidebar) -->
             <aside class="filters-sidebar">
                 <h2>Filtrar Por</h2>
                 <form id="form-filtros">
@@ -61,11 +64,13 @@
                 </form>
             </aside>
 
+            <!-- Lista de Produtos e Paginação -->
             <section class="products-list-section" aria-label="Lista de Produtos">
                 <div id="lista-produtos" class="products-grid">
                     <!-- Injeção via JS -->
                 </div>
 
+                <!-- Paginação Semântica -->
                 <nav class="pagination" aria-label="Navegação de páginas">
                     <a href="#" class="page-link" aria-label="Página anterior">&laquo; Anterior</a>
                     <a href="#" class="page-link active" aria-current="page">1</a>
@@ -75,6 +80,7 @@
             </section>
         </div>
 
+        <!-- Texto de SEO (Estratégico no final da página para não empurrar os produtos para baixo) -->
         <section class="seo-footer-text">
             <h2>Como escolher a melhor cadeira para sua rotina?</h2>
             <p>Ao buscar uma cadeira, considere o tempo que passará nela. Modelos com mecanismo de inclinação sincronizada, braços 3D e encosto em tela Mesh (que permite a troca térmica) são ideais para climas quentes e longas horas de uso diário. Invista na sua saúde e evite lesões por esforço repetitivo (LER).</p>
